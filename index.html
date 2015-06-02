@@ -7,6 +7,7 @@
     <!-- load MUI -->
     <link href="//cdn.muicss.com/mui-0.1.4/css/mui.min.css" rel="stylesheet" type="text/css" />
     <script src="//cdn.muicss.com/mui-0.1.4/js/mui.min.js"></script>
+    <script type="text/javascript" src="bootstrap-tabcollapse.js"></script>
   </head>
   <body>
     <!-- example content -->
@@ -65,11 +66,7 @@
         <ul class="mui-tabs mui-tabs-justified">
 		  <li class="mui-active">
 		  	<a data-mui-toggle="tab" data-mui-controls="pane-justified-1">
-		  		<!--div class="mui-row">
-				  <div class="mui-col-md-1">Research</div>
-				  <div class="mui-col-md-1">Interests</div>
-				  <div class="mui-col-md-1">and Positions</div>
-				</div-->Research Interests and Positions
+		  		Research Interests and Positions
 			</a>
 		  </li>
 		  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Papers and Projects</a></li>
@@ -296,7 +293,7 @@ International Computing Education Research</i> (ICER), 2013. ACM, New York, NY, 
 %\item {\bf Caltech JPL} Special Achievemant Award (\$1,000) \hfill May '03
 %\item {\bf AAAI} Intel Science and Engineering Award \hfill '02, '03, '04
 \end{itemize}
-\end{itemize}
+\end{itemize}-->
 
 
 
@@ -306,5 +303,8 @@ International Computing Education Research</i> (ICER), 2013. ACM, New York, NY, 
 		</div>
       </div>
     </div>
+    <script type="text/javascript">
+    	$('.mui-tabs').tabCollapse();
+    </script>
   </body>
 </html>
