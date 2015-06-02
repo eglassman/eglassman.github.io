@@ -8,6 +8,7 @@
     <link href="//cdn.muicss.com/mui-0.1.4/css/mui.min.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
     ul { list-style-type: none}
+    .tab-label {text-overflow: ellipsis;}
     </style>
     <script src="//cdn.muicss.com/mui-0.1.4/js/mui.min.js"></script>
     <script type="text/javascript" src="bootstrap-tabcollapse.js"></script>
@@ -69,11 +70,17 @@
         <ul class="mui-tabs mui-tabs-justified">
 		  <li class="mui-active">
 		  	<a data-mui-toggle="tab" data-mui-controls="pane-justified-1">
-		  		Research Interests and Positions
+		  		<div class="tab-label">Research Interests and Positions</div>
 			</a>
 		  </li>
-		  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Papers and Projects</a></li>
-		  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Fellowships, Awards, and Press</a></li>
+		  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">
+		  		<div class="tab-label">Papers and Projects</div>
+		  	</a>
+		  </li>
+		  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">
+		  		<div class="tab-label">Fellowships, Awards, and Press</div>
+		  	</a>
+		  </li>
 		</ul>
 		<div class="mui-tab-content">
 		  <div class="mui-tab-pane mui-active" id="pane-justified-1">
