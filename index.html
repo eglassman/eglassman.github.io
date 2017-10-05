@@ -3,12 +3,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Elena L. Glassman</title>
+
+        <!--files for sortable table of papers-->
+        <script src="sortable.min.js"></script>
+        <link rel="stylesheet" href="css/sortable-theme-bootstrap.css" />
+        <!--end of files for sortable table of papers-->
+        
         <style>
         body {
             font-family: "OpenSans", "Helvetica", sans-serif;
         }
         #content {
-            width: 960px;
+            width: 1160px;
             margin: 40px auto;
         }
         .icon {
@@ -26,14 +32,45 @@
         .name {
             font-weight: bolder;
         }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        th {
+            align: left;
+        }
         </style>
     </head>
 
     <body>
 
         <div id="content">
-            <header>
-                <nav class="left">
+
+            <section>
+                <hr>
+                <div class="row">
+                    <div>
+                        <span class="name">Elena L. Glassman</span>, MIT PhD EECS<br>
+                        Postdoctoral Scholar, UC Berkeley<br>
+                        Fellow, Berkeley Institute of Data Science<br>
+                        <br>
+                        <a href="CV.pdf"><img class="icon" alt="CV" title="CV" src="img/cv.svg"></a>
+                        &nbsp;
+                        <a class="email-link" href="mailto:eglassman@berkeley.edu"><img class="icon" alt="" title="Email" src="img/mail.svg"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://scholar.google.com/citations?user=C_r8d0AAAAAJ&amp;hl=en&amp;oi=ao"><img class="icon" title="Google Scholar" alt="Google Scholar" src="img/google-scholar.svg"></a>&nbsp;
+                        <a href="https://github.com/eglassman"><img class="icon" title="Github" alt="Github" src="img/github.svg"></a>&nbsp;
+                        <a href="https://twitter.com/roboticwrestler"><img class="icon" title="Twitter" alt="Twitter" src="img/twitter.svg"></a>&nbsp;
+                        <a href="https://medium.com/@roboticwrestler"><img class="icon" title="Medium" alt="Medium" src="img/medium.svg"></a>&nbsp;
+                        <a href="https://www.linkedin.com/pub/elena-glassman/5/306/943"><img class="icon" title="LinkedIn" alt="LinkedIn" src="img/linkedin.svg"></a>
+                    </div>
+                    <div>
+                        <img id="portrait" src="img/newestheadshot_small.jpg" alt="Profile photo">
+                    </div>
+                </div>
+            <!-- <header> -->
+                <!-- <hr> -->
+<!--                 <nav class="left">
                     <span class="name">Elena L. Glassman</span>, MIT PhD EECS<br>
                     Postdoctoral Scholar, UC Berkeley<br>
                     Fellow, Berkeley Institute of Data Science<br>
@@ -50,7 +87,49 @@
                 </nav>
                 <nav class="right">
                     <img id="portrait" src="img/newestheadshot_small.jpg" alt="Profile photo">
-                </nav>
+                </nav> -->
+            </section>
+
+            
+            <section>
+                <!-- <hr> -->
+                <header><h3>Papers</h3></header>
+                <table class="sortable-theme-bootstrap"  data-sortable>
+                    <thead>
+                        <tr>
+                            <th width="60px">Year</th>
+                            <th width="100px">Conference</th>
+                            <th>Title</th>
+                            
+                            <th>Context</th>
+                            <th>Humans in the loop</th>
+                            <th width="125px">Technology</th>
+                            <th>Authors</th>
+                            <th width="125px">Organization</th>
+                            <!-- <th>Philosophy</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2017</td>
+                            <td>ACM Learning @ Scale</td>
+                            <td>Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis</td>
+                            
+                            <td>Massive Programming Classrooms</td>
+                            <td>Teachers
+                                <ul>
+                                    <li>receive <b>high-level view</b> of student mistakes and misconceptions</li>
+                                    <li>provide <b>feedback at scale</b> via demonstrations and explanations</li>
+                                </ul>
+                            </td>
+                            <td>Program synthesis by example</td>
+                            <td>Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td>
+                            <td>UC Berkeley</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </section>
                 
 
                 <!-- <div id="protr" class="col2">
