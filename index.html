@@ -46,6 +46,10 @@
         th {
             align: left;
         }
+        .award {
+            font-style: italic;
+            background-color: lightyellow;
+        }
         /*td {
             align: left;
         }
@@ -57,6 +61,25 @@
         }
         #abbrev {
             font-size: small;
+        }
+        a {
+          color:#39c;
+          text-decoration:none;
+        }
+
+        a:hover {
+          color:#069;
+        }
+
+        a small {
+          font-size:11px;
+          color:#777;
+          margin-top:-0.3em;
+          display:block;
+        }
+
+        a:hover small {
+          color:#777;
         }
         </style>
     </head>
@@ -155,6 +178,8 @@
                             <tr> -->
                                 <td width="100px" align="right">BCI&nbsp;&nbsp;</td>
                                 <td>Brain-Computer Interaction</td>
+
+                                
                             <!-- </tr> -->
                             <!-- <tr>
                                 <td width="100px"><i>Venue</i></td>
@@ -180,8 +205,9 @@
                                 
                             </tr>
                             <tr>
-                                <td width="100px" align="right">ROB&nbsp;&nbsp;</td>
-                                <td>Agile (Underactuated) Robotics</td>
+                                
+                                <td width="100px" align="right">UID&nbsp;&nbsp;</td>
+                                <td>User Interface Design</td>
                                 
                                 <td width="100px" align="right">L@S&nbsp;&nbsp;</td>
                                 <td>Learning at Scale<br><i><b>Program Committee</b></i></td>
@@ -189,8 +215,8 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td width="100px" align="right">SigProc&nbsp;&nbsp;</td>
-                                <td>Signal Processing</td>
+                                <td width="100px" align="right">ProgSyn&nbsp;&nbsp;</td>
+                                <td>Program Synthesis</td>
                                 <td width="100px" align="right">CSCW&nbsp;&nbsp;</td>
                                 <td>Computer-Supported Cooperative Work and Social Computing<br><i><b>Reviewer</b></i></td>
                                 
@@ -198,18 +224,27 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td width="100px" align="right">ProgSyn&nbsp;&nbsp;</td>
-                                <td>Program Synthesis</td>
+                                <td width="100px" align="right">SigProc&nbsp;&nbsp;</td>
+                                <td>Signal Processing</td>
+                                
                                 <td width="100px" align="right">VL/HCC&nbsp;&nbsp;</td>
                                 <td>Visual Languages and Human-Centric Computing</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td width="100px" align="right">Robotics&nbsp;&nbsp;</td>
+                                <td>Trajectory planning &amp; optimization for agile (underactuated) robots</td>
                                 <td width="100px" align="right">ICRA&nbsp;&nbsp;</td>
-                                <td>International Conference on Robotics and Automation </td>
+                                <td>International Conference on Robotics and Automation</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td width="100px" align="right">ICER&nbsp;&nbsp;</td>
+                                <td>International Computing Education Research</td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -251,16 +286,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img align="right" src="img/tracediff2.jpg"></td>
+                            <td style="text-align: right"><img align="right" src="img/tracediff2.jpg"></td>
                             <td valign="top">2017</td>
                             <td valign="top">IEEE<br>VL/HCC</td>
-                            <td valign="top">TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences<br><br>
+                            <td valign="top"><a href="papers/vlhcc-2017-tracediff.pdf">TraceDiff: Debugging unexpected code behavior using trace divergences</a><br><br>
                             by Suzuki, Soares, Head, <i>Glassman</i>, Reis, Mongiovi, D'Antoni, and Hartmann
                             </td>
                             
-                            <td valign="top">Massive Programming Classrooms</td>
+                            <td valign="top">Massive programming classrooms<br><br>
+                            <a href="https://github.com/ryosuzuki/trace-diff">[Github]</a><br>
+                            <a href="https://ryosuzuki.github.io/trace-diff/">[Demo]</a></td>
                             <!-- <td valign="top">Students receive personalized interactive displays of how their program deviates in behavior from the closest solution that passes all the teacher's tests.</td> -->
-                            <td valign="top">Program synthesis</td>
+                            <td valign="top">Program synthesis,<br>User interface design</td>
                             <!-- <td valign="top">Suzuki, Soares, Head, <i>Glassman</i>, Reis, Mongiovi, D'Antoni, and Hartmann</td> -->
                             <!-- <td valign="top">UC Boulder<br>UFCG<br>UC Berkeley<br>UW Madison</td> -->
                             <td valign="top">HCI</td>
@@ -272,40 +309,194 @@
                             <td><img align="right" src="img/lats17.jpg"></td>
                             <td valign="top">2017</td>
                             <td valign="top">ACM<br>L@S</td>
-                            <td valign="top">Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis<br><br>
+                            <td valign="top"><a href="papers/glassmanLatS17.pdf">Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis</a><br><br>
                             by Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td>
                             
-                            <td valign="top">Massive Programming Classrooms</td>
+                            <td valign="top">Massive programming classrooms</td>
                             <!-- <td valign="top">Teachers get a <b>high-level view</b> of student mistakes and misconceptions and provide <b>feedback at scale</b> via demonstrations and explanations. -->
                             </td>
-                            <td valign="top">Program synthesis by example</td>
+                            <td valign="top">Program synthesis,<br>User interface design</td>
                             <!-- <td valign="top">Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td> -->
                             <!-- <td valign="top">UC Berkeley<br>UFCG<br>UC Boulder<br>UW Madison</td> -->
                             <td valign="top">HCI</td>
                             <td valign="top" style="text-align: center;"><img class="Affiliation" title="Berkeley" alt="Berkeley" src="img/ucbseal.png">UC Berkeley</td>
                             <!-- <td valign="top"></td> -->
                         </tr>
-                        
+                        <tr>
+                            <td><img align="right" width=300px; src="img/docmatrix.jpg"></td>
+                            <td valign="top">2016</td>
+                            <td valign="top">ASIS&amp;T Annual Meeting</td>
+                            <td valign="top"><a href="papers/glassman-and-russell.pdf">DocMatrix: Self-Teaching from Multiple Sources</a><br><br>
+                            by <i>Glassman</i> and Russell</td>
+                            
+                            <td valign="top">Searching<br>to learn</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Document corpus interface design</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="Google" alt="Google" src="img/google_small_logo.jpg">Google</td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/dearbeta.jpg"></td>
+                            <td valign="top">2016</td>
+                            <td valign="top">ACM CSCW</td>
+                            <td valign="top"><a href="papers/cscw_glassman.pdf">Learnersourcing Personalized Hints</a><br><br>
+                            by <i>Glassman</i>, Lin, Cai, and Miller</td>
+                            
+                            <td valign="top">Massive programming classrooms</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Crowdsourcing</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/foobaz.jpg"></td>
+                            <td valign="top">2015</td>
+                            <td valign="top">ACM UIST</td>
+                            <td valign="top"><a href="papers/uist2015-elg-foobaz.pdf">Foobaz: Variable Name Feedback for Student Code at Scale.</a><br><br>
+                            by <i>Glassman</i>, Fischer, Scott, and Miller</td>
+                            
+                            <td valign="top">Massive programming classrooms<br><br><a href="https://www.youtube.com/watch?v=4X94_2XEsrE">[Youtube]</a></td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Program analysis,<br>user interface design</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/overcode_big.jpg"></td>
+                            <td valign="top">2015</td>
+                            <td valign="top">ACM TOCHI</td>
+                            <td valign="top"><a href="papers/glassman-tochi.pdf">OverCode: visualizing variation in student solutions to programming problems at scale</a><br><br>
+                            by <i>Glassman</i>, Scott, Singh, Guo, and Miller</td>
+                            
+                            <td valign="top">Massive programming classrooms<br><br><a href="http://news.mit.edu/2015/reviewing-mooc-homework-0330">[MIT Spotlight]</a><a href="https://www.youtube.com/watch?v=6ov_82nxpbQ">[Youtube]</a></td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Program analysis,<br>User interface design</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: right;"><img align="right" width=300px; src="img/mudslide.jpg"></td>
+                            <td valign="top">2015</td>
+                            <td valign="top">ACM CHI</td>
+                            <td valign="top"><a href="papers/mudslide_chi2015.pdf">Mudslide: A Spatially Anchored Census of Student Confusion for Online Lecture Videos</a><br><br>
+                            by <i>Glassman</i>, Kim, Monroy-Hernández, and Morris<br><br><img class="icon" alt="Award" title="Award" src="img/award.svg">&nbsp;<span class="award">Best of CHI Honorable Mention</span></td>
+                            
+                            <td valign="top">Remote or <br>massive classrooms<br><br><a href="https://youtu.be/WX8SM28bfnk">[Youtube]</a></td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">User interface design</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MSR" alt="MSR" src="img/msr_small_logo.jpg">Microsoft Research</td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
                         
                         <tr>
-                            <td><img align="right" width=200px; src="img/snap.jpg"></td>
+                            <td style="text-align: right;"><img align="right" width=300px; src="img/rimes.jpg"></td>
+                            <td valign="top">2015</td>
+                            <td valign="top">ACM CHI</td>
+                            <td valign="top"><a href="papers/rimes_chi2015.pdf">RIMES: Embedding Interactive Multimedia Exercises in Lecture Videos</a><br><br>
+                            by Kim, <i>Glassman</i>, Monroy-Hernández, and Morris</td>
+                            
+                            <td valign="top">Remote or <br>massive classrooms<br><br><a href="https://www.youtube.com/watch?v=DnayXxSn1J0">[Youtube]</a></td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">User interface design</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MSR" alt="MSR" src="img/msr_small_logo.jpg">Microsoft Research</td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>      
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/icer.jpg"></td>
+                            <td valign="top">2013</td>
+                            <td valign="top">ACM ICER</td>
+                            <td valign="top"><a href="papers/icer06d-glassman.pdf">Toward Facilitating Assistance to Students Attempting Engineering Design Problems</a><br><br>
+                            by <i>Glassman</i>, Gulley, and Miller</td>
+                            
+                            <td valign="top">Massive programming classrooms</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Program analysis</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">HCI</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr> 
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/flyingrobot.jpg"></td>
+                            <td valign="top">2012</td>
+                            <td valign="top">IEEE ICRA</td>
+                            <td valign="top"><a href="papers/perchingROA.pdf">Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates</a><br><br>
+                            by <i>Glassman</i>, Desbiens, Tobenkin, Cutkosky, and Tedrake</td>
+                            
+                            <td valign="top">Agile flying<br>robots</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Kinodynamic trajectory planning and optimization</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">Robotics</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"><img class="Affiliation" title="Stanford" alt="Stanford" src="img/stanford_logo.jpg">Stanford</td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>     
+
+                        <tr>
+                            <td><img align="right" width=300px; src="img/meng_thesis.jpg"></td>
+                            <td valign="top">2010</td>
+                            <td valign="top">IEEE ICRA</td>
+                            <td valign="top"><a href="papers/quadRegICRA.pdf">A quadratic regulator-based heuristic for rapidly exploring state space</a><br><br>
+                            by <i>Glassman</i> and Tedrake</td>
+                            
+                            <td valign="top">Underactuated robots</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
+                            <td valign="top">Kinodynamic trajectory planning</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
+                            <td valign="top">Robotics</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>               
+                        
+                        <tr>
+                            <td><img align="right" width=300px; src="img/snap_2.jpg"></td>
                             <td valign="top">2005</td>
                             <td valign="top">IEEE TBME</td>
-                            <td valign="top">A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs<br>
+                            <td valign="top"><a href="papers/SNAPwavelet.pdf">A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs</a><br><br>
                             by <i>Glassman</i><br><br>
-                            <img class="icon" alt="Award" title="Award" src="img/award.svg">&nbsp;Intel Young Scientist Award,<br> top prize at ISEF 2003<br>
-                            <a href="https://www.intel.com/pressroom/archive/releases/2003/20030516corp.htm">Press Release</a><br>
-                            <a href="http://science.sciencemag.org/content/300/5624/1368.4.full?sid=b8e981a3-2955-492f-ab33-2d47c31c414d"><i>Science</i> May 2003 profile</a></td>
+                            <img class="icon" alt="Award" title="Award" src="img/award.svg">&nbsp;<span class="award">Intel Young Scientist Award</span>, top prize at ISEF 2003<br>
+                            <a href="https://www.intel.com/pressroom/archive/releases/2003/20030516corp.htm">[Press Release]</a><br>
+                            <a href="http://science.sciencemag.org/content/300/5624/1368.4.full?sid=b8e981a3-2955-492f-ab33-2d47c31c414d">[Profile in <i>Science</i>]</a></td>
                             
-                            <td valign="top">Brain-Computer Interfaces</td>
+                            <td valign="top">Brain-computer interfaces</td>
                             <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
                             <td valign="top">Wavelet analysis</td>
                             <!-- <td valign="top"><i>Glassman</i></td> -->
                             <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
-                            <td valign="top">Signal processing</td>
-                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="MIT" alt="MIT" src="img/mit_logo.jpg"></td>
+                            <td valign="top">Signal<br>Processing</td>
+                            <td valign="top" style="text-align: center;"><img class="Affiliation" title="CBW" alt="CBW" src="img/west_logo.jpg">Central Bucks West HS</td>
                             <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
                         </tr>
+                        
+
+                        
                     </tbody>
                 </table>
             </section>
