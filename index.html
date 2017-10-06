@@ -18,7 +18,7 @@
             margin: 40px auto;
         }
         #papers {
-            width: 1500px;
+            width: 1000px;
             margin: 40px auto;
         }
         .icon {
@@ -51,6 +51,9 @@
         }*/
         ul {
             padding-left: 15px;
+        }
+        #abbrev {
+            font-size: small;
         }
         </style>
     </head>
@@ -106,71 +109,176 @@
             
             <section id="papers">
                 <!-- <hr> -->
-                <header><h3>(Sortable) Papers</h3></header>
+                <header>
+                    <h2>Papers</h2>
+                    <table id="abbrev">
+                        <!-- <thead>
+                            <tr>
+                                <th colspan="6">Abbreviations</th>
+                                <th align="left">Full name</th>
+                                <th></th><th align="left">Field</th><th></th><th align="left">Conference</th><th></th><th align="left">Journal</th>
+                            </tr>
+                            
+                        </thead> -->
+                        <tbody>
+                            <!-- <tr>
+                                <td width="100px"><i>Field</i></td>
+                                
+                            </tr> -->
+                            <tr>
+                                <!-- <th align="left">Abbreviation:</th>
+                                <th align="left">Full name</th> -->
+                                <td></td><td align="left"><i>Fields</i></td><td></td><td align="left"><i>ACM / IEEE Conferences</i></td><td></td><td align="left"><i>ACM / IEEE Journals<i></td>
+                            </tr>
+                            <tr>
+                                <td width="100px" align="right">HCI&nbsp;&nbsp;</td>
+                                <td>Human-Computer Interaction</td>
+                                <td width="100px" align="right">CHI&nbsp;&nbsp;</td>
+                                <td>Human Factors in Computing Systems</td>
+                                <td width="100px" align="right">TOCHI&nbsp;&nbsp;</td>
+                                <td>Trans. Computer-Human Interaction</td>
+                            </tr>
+                            <tr>
+                            <!-- </tr>
+                            <tr> -->
+                                <td width="100px" align="right">BCI&nbsp;&nbsp;</td>
+                                <td>Brain-Computer Interaction</td>
+                            <!-- </tr> -->
+                            <!-- <tr>
+                                <td width="100px"><i>Venue</i></td>
+                                
+                            </tr> -->
+                            <!-- <tr> -->
+                                
+                                <td width="100px" align="right">UIST&nbsp;&nbsp;</td>
+                                <td>User Interface Software and Technology</td>
+                            <!-- </tr>
+                            <tr> -->
+                                
+                            <!-- </tr>
+                            <tr> -->
+                                <!-- <td width="100px"><i>Journal</i></td>
+                                
+                            </tr>
+                            <tr> -->
+                                <td width="100px" align="right">TBME&nbsp;&nbsp;</td>
+                                <td>Trans. Biomedical Engineering</td>
+                            <!-- </tr>
+                            <tr> -->
+                                
+                            </tr>
+                            <tr>
+                                <td width="100px" align="right">ROB&nbsp;&nbsp;</td>
+                                <td>Agile (Underactuated) Robotics</td>
+                                
+                                <td width="100px" align="right">L@S&nbsp;&nbsp;</td>
+                                <td>Learning at Scale</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td width="100px" align="right">VL/HCC&nbsp;&nbsp;</td>
+                                <td>Visual Languages and Human-Centric Computing</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td width="100px" align="right">CSCW&nbsp;&nbsp;</td>
+                                <td>Computer-Supported Cooperative Work and Social Computing</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <ul>
+                        <li>Fields</li>
+                            <ul>
+                                <li>HCI: Human-Computer Interaction</li>
+                            </ul>
+                        <li>Venue
+                            <ul>
+                                <li>L@S: Learning @ Scale</li>
+                                <li>VL/HCC: Visual Languages and Human-Centric Computing</li>
+                            </ul>
+                        </li>
+                    </ul> -->
+
+                </header>
+                <hr>
                 <table class="sortable-theme-bootstrap"  data-sortable>
                     <thead>
                         <tr>
-                            <th width="150px" style="text-align: right;">Figure</th>
-                            <th width="75px">Year</th>
-                            <th width="100px">Venue</th>
-                            <th>Title</th>
+                            <th data-sortable="false" width="150px" style="text-align: right;">Figure</th>
+                            <th width="60px" data-sorted="true" data-sorted-direction="descending">Year</th>
+                            <th width="70px">Venue</th>
+                            <th>Title and Authors</th>
                             
                             <th>Context</th>
-                            <th width="175px">Humans in the loop</th>
-                            <th width="125px">Technology</th>
-                            <th width="100px">Authors</th>
-                            <th width="125px">Organization</th>
+                            <!-- <th width="200px">Humans in the loop</th> -->
+                            <th width="100px">Technology</th>
+                            <!-- <th width="75px">Authors</th> -->
+                            <!-- <th width="125px">Organization</th> -->
                             <th>Field</th>
-                            <th width="100px">Awards</th>
+                            <!-- <th width="100px">Awards</th> -->
                             <!-- <th>Philosophy</th> -->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img align="right" src="img/lats17.jpg"></td>
+                            <td><img align="right" src="img/tracediff2.jpg"></td>
                             <td valign="top">2017</td>
-                            <td valign="top">ACM Learning @ Scale (L@S)</td>
-                            <td valign="top">Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis</td>
+                            <td valign="top">IEEE<br>VL/HCC</td>
+                            <td valign="top">TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences<br><br>
+                            by Suzuki, Soares, Head, <i>Glassman</i>, Reis, Mongiovi, D'Antoni, and Hartmann
+                            </td>
                             
                             <td valign="top">Massive Programming Classrooms</td>
-                            <td valign="top">Teachers
-                                <ul>
-                                    <li>receive <b>high-level view</b> of student mistakes and misconceptions</li>
-                                    <li>provide <b>feedback at scale</b> via demonstrations and explanations</li>
-                                </ul>
+                            <!-- <td valign="top">Students receive personalized interactive displays of how their program deviates in behavior from the closest solution that passes all the teacher's tests.</td> -->
+                            <td valign="top">Program synthesis</td>
+                            <!-- <td valign="top">Suzuki, Soares, Head, <i>Glassman</i>, Reis, Mongiovi, D'Antoni, and Hartmann</td> -->
+                            <!-- <td valign="top">UC Boulder<br>UFCG<br>UC Berkeley<br>UW Madison</td> -->
+                            <td valign="top">HCI</td>
+                            <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
+                        </tr>
+
+                        <tr>
+                            <td><img align="right" src="img/lats17.jpg"></td>
+                            <td valign="top">2017</td>
+                            <td valign="top">ACM<br>L@S</td>
+                            <td valign="top">Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis<br><br>
+                            by Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td>
+                            
+                            <td valign="top">Massive Programming Classrooms</td>
+                            <!-- <td valign="top">Teachers get a <b>high-level view</b> of student mistakes and misconceptions and provide <b>feedback at scale</b> via demonstrations and explanations. -->
                             </td>
                             <td valign="top">Program synthesis by example</td>
-                            <td valign="top">Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td>
-                            <td valign="top">UC Berkeley, UW Madison, UFCG, UC Boulder</td>
-                            <td valign="top">Human-computer interaction (HCI)</td>
-                            <td valign="top"></td>
+                            <!-- <td valign="top">Head, <i>Glassman</i>, Soares, Suzuki, Figueredo, D'Antoni and Hartmann</td> -->
+                            <!-- <td valign="top">UC Berkeley<br>UFCG<br>UC Boulder<br>UW Madison</td> -->
+                            <td valign="top">HCI</td>
+                            <!-- <td valign="top"></td> -->
                         </tr>
+                        
+                        
                         <tr>
                             <td><img align="right" width=200px; src="img/snap.jpg"></td>
                             <td valign="top">2005</td>
-                            <td valign="top">IEEE Transactions on Biomedical Engineering (TBME)</td>
-                            <td valign="top">A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs</td>
+                            <td valign="top">IEEE TBME</td>
+                            <td valign="top">A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs<br>
+                            by <i>Glassman</i><br><br>
+                            <img class="icon" alt="Award" title="Award" src="img/award.svg">&nbsp;Intel Young Scientist Award,<br> top prize at ISEF 2003<br>
+                            <a href="https://www.intel.com/pressroom/archive/releases/2003/20030516corp.htm">Press Release</a><br>
+                            <a href="http://science.sciencemag.org/content/300/5624/1368.4.full?sid=b8e981a3-2955-492f-ab33-2d47c31c414d"><i>Science</i> May 2003 profile</a></td>
                             
-                            <td valign="top">Brain-Computer Interfaces (BCI)</td>
-                            <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td>
+                            <td valign="top">Brain-Computer Interfaces</td>
+                            <!-- <td valign="top">EEG-based BCI users may experience more quick, accurate responses from the computer using this custom-designed wavelet.</td> -->
                             <td valign="top">Wavelet analysis</td>
-                            <td valign="top"><i>Glassman</i></td>
-                            <td valign="top">Central Bucks West HS, Princeton U</td>
+                            <!-- <td valign="top"><i>Glassman</i></td> -->
+                            <!-- <td valign="top">Central Bucks West HS<br>Princeton U</td> -->
                             <td valign="top">Signal processing</td>
-                            <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td>
-                        </tr>
-                        <tr>
-                            <td><img align="right" src="img/tracediff.jpg"></td>
-                            <td valign="top">2017</td>
-                            <td valign="top">IEEE Visual Languages and Human-Centric Computing (VL/HCC)</td>
-                            <td valign="top">TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences</td>
-                            
-                            <td valign="top">Massive Programming Classrooms</td>
-                            <td valign="top">Students can get personalized display how their program deviates in behavior from the closest solution that passes all the teacher's tests.</td>
-                            <td valign="top">Program synthesis</td>
-                            <td valign="top">Suzuki, Soares, Head, <i>Glassman</i>, Reis, Mongiovi, D'Antoni, Hartmann</td>
-                            <td valign="top">UC Boulder, UC Berkeley, UW Madison, UFCG</td>
-                            <td valign="top">Human-Computer Interaction</td>
                             <!-- <td valign="top">Intel Young Scientist Award<br>(ISEF 2005 top prize)</td> -->
                         </tr>
                     </tbody>
