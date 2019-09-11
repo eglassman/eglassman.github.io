@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.min.js" ></script>
+
+    <title>{% if page.title %}{{ site.title | escape }} | {{page.title | escape }} {% else %} {{ site.title | escape }} {% endif %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <meta name="description" content="{% if page.description %}{{ page.description | escape }} {% else %} {{ site.description | escape }} {% endif %}">
+
+    <link rel="icon"
+      type="image/png"
+      href="./assets/images/logo2.png">
+
+
+  </head>
+    <body>
+
+<p class="centered padded">
+
+<div class="centered">
+<a href="/" class="nounderline"><div class="big uw"><span class="extra-big">PL/HCI</span> Graduate Seminar</div>
+<div class="padding-bottom">{{ site.description | escape }}</div></a>
+<div class="padding-top">CS 252r &amp; CS 279r</div>
+<div class="lessbold">
+<span>MW 12-1:15 PM</span>
+<span class="left-padding">Pierce 209</span>
+</div>
+<div>
+<span>Harvard, Cambridge, MA</span>
+<!-- <span class="left-padding">Fall 2019</span> -->
+</div>
+<div>Fall 2019</div>
+</div>
+</p>
+
+      <!-- <div class="header padded bottom-border">
+        <div class="pull-right">
+        </div>
+        <a href="/" class="nounderline">
+        <div class="mark">
+          <span class="uw">{{ site.title | escape }}</span>
+        </div>
+        <div class="padding-top">{{ site.description | escape }}</div>
+        </a>
+        <br>
+      </div> -->
+
+      <!-- <div class="header padded bottom-border" style="clear:right">
+
+            <div class="clearfix">
+
+
+              <div class="pull-left">
+                <a href="/" class="nounderline">
+                  <div class="mark">
+                    <span class="uw">{{ site.title | escape }}</span>
+                  </div>
+                  <div class="padding-top">{{ site.description | escape }}</div>
+                </a>
+              </div>
+
+
+              <div class="pull-right">
+                PLATEAU 2019 co-located with
+                <a href="http://uist.acm.org/uist2019/" title="UIST2019" target="_blank"><img src="./assets/images/uist2019.png" height="21px"></a>
+                <div class="navbar-wrapper">
+
+                      <div class="padding-top">
+                        <div>
+                          {% for link in site.navbar_links %}
+                          <a
+                            {% if link.newtab == true %}
+                              target = "_blank"
+                            {% endif %}
+                            href="{{ link.url }}"><span class="navbarlink">{{ link.title }}</span></a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+
+            </div>
+
+      </div> -->
+
+      <div id="main">
+        <div class="content">
+
+          {{ content }}
+
+
+
+  <div style="clear:both"></div>
+
+
+<script>
+$("#install").button();
+$("#learn").button();
+</script>
+
+        <div class="footer">
+        </div>
+      </div>
+
+
+</body></html>
