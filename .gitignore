@@ -1,5 +1,8 @@
 .DS_Store
-/_site
 **/.DS_Store
 *~
-/.jekyll-cache
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
