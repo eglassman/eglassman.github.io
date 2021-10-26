@@ -3,6 +3,10 @@ body {
   text-decoration-skip: ink;
 }
 
+.award {
+  background-color:rgb(220, 91, 93);
+}
+
 a {
   color: rgb(220, 91, 93);
   text-decoration: none;
@@ -370,8 +374,8 @@ pre.bibtex {
   white-space: pre-wrap;
 }
 
-.project .teaser-img { 
-  position: relative; 
+.project .teaser-img {
+  position: relative;
 }
 
 .project .play-button {
@@ -467,7 +471,7 @@ pre.bibtex {
   width: 123px;
   opacity: 0.7;
 }
-.person img:hover { 
+.person img:hover {
   opacity: 0.9;
 }
 
