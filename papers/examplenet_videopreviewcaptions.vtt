@@ -1,0 +1,25 @@
+﻿WEBVTT
+
+00:00:01.000 --> 00:00:04.989
+Many programmers search for online examples when designing neural networks.
+
+00:00:04.989 --> 00:00:12.513
+However, it's time-consuming to identify desired information from search results and compare design choices in different models.
+
+00:00:12.513 --> 00:00:19.003
+We propose a novel interface for exploring the common and uncommon design choices in a large collection of models.
+
+00:00:19.003 --> 00:00:21.003
+This interface includes
+
+00:00:21.003 --> 00:00:23.507
+(1) a faceted browser to identify relevant models,
+
+00:00:23.507 --> 00:00:25.507
+(2) the distribution of different layers,
+
+00:00:25.507 --> 00:00:27.511
+(3) an overview of different model structures, and
+
+00:00:27.511 --> 00:00:30.014
+(4) the distribution of hyper parameters.

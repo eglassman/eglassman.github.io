@@ -1,0 +1,142 @@
+﻿WEBVTT
+
+00:00:00.000 --> 00:00:03.337
+This video will demonstrate how to use ExampleNet.
+
+00:00:03.337 --> 00:00:06.340
+ExampleNet is an interactive interface for navigating
+
+00:00:06.340 --> 00:00:09.000
+and exploring many Deep Learning projects from GitHub
+
+00:00:09.000 --> 00:00:11.000
+It is designed to help you
+
+00:00:11.000 --> 00:00:16.917
+(1) see a holistic view of the many different architectures that have already uploaded to Github
+
+00:00:16.951 --> 00:00:19.920
+(2) find good neural network examples and
+
+00:00:19.920 --> 00:00:23.891
+(3) make data-driven design decisions when building your own neural network.
+
+00:00:23.891 --> 00:00:29.864
+On the left side of our interface, you can find the faceted browser
+
+00:00:29.864 --> 00:00:39.807
+These facets capture the types of deep learning projects in our GitHub dataset from several different perspectives
+
+00:00:39.807 --> 00:00:52.786
+For example, there’s a facet that shows the types of datasets these models process, the types of deep learning tasks they perform, and the types of neural networks they implement.
+
+00:00:52.786 --> 00:01:01.475
+The numbers on the right, as well as the length of the blue bar, indicate how many models of that type that have been pulled from Github into our tool.
+
+00:01:01.475 --> 00:01:12.000
+For example, if I want to build a speech recognition model, I can click the checkbox next to “speech recognition” in the Task facet.
+
+00:01:12.000 --> 00:01:18.001
+The interface will update the frequency bars based on the remaining models.
+
+00:01:18.001 --> 00:01:19.990
+Now the frequency bars have two colors.
+
+00:01:19.990 --> 00:01:30.251
+The light blue bars show the number of models in the original dataset, and the dark blue bars show the number of models after filtering.
+
+00:01:30.251 --> 00:01:40.499
+As you can see, after we filter for speech recognition models in the Task facet, the most popular type of neural networks now becomes the CTC.
+
+00:01:40.499 --> 00:01:47.247
+There are also some other filters for project stars, forks, and the number of layers.
+
+00:01:47.247 --> 00:01:52.284
+You can drag the handles on both sides of the brush to filter models.
+
+00:01:52.284 --> 00:01:57.552
+Now, let us focus on the histogram.
+
+00:01:57.552 --> 00:02:04.712
+This histogram shows the distribution of different types of layers in the collection of neural network models.
+
+00:02:04.712 --> 00:02:08.408
+Each layer type is assigned a unique color.
+
+00:02:08.408 --> 00:02:14.483
+Now I will introduce the major widget in our interface, the Sankey diagram.
+
+00:02:14.483 --> 00:02:21.228
+The sankey diagram provides a birds’ eye view of different neural network structures in the GitHub projects.
+
+00:02:21.228 --> 00:02:28.290
+Each branch or flow in this diagram represents the network structure of a single model.
+
+00:02:28.290 --> 00:02:32.703
+Each node is a layer in a neural network.
+
+00:02:32.703 --> 00:02:35.755
+Like this Convolution is a node
+
+00:02:35.755 --> 00:02:43.199
+this convolutional layer indicates that all 13 models use the convolutional layer as their first layer.
+
+00:02:43.199 --> 00:02:50.358
+Sometimes, as you can see, some models could be very deep.
+
+00:02:50.358 --> 00:02:53.772
+Therefore, you can drag the model to the right to see the deep layers.
+
+00:02:53.772 --> 00:03:01.560
+You can also use the scroll wheel in your mouse to zoom in or out.
+
+00:03:01.560 --> 00:03:11.746
+When you click the alignment view, the Sankey diagram will be updated to align the neural network by layer types.
+
+00:03:11.746 --> 00:03:16.942
+For example, these convolutional and relu nodes.
+
+00:03:16.942 --> 00:03:22.787
+As you can see, they have been aligned to the same position.
+
+00:03:22.787 --> 00:03:29.212
+his alignment may help you find some interesting patterns in the model structures.
+
+00:03:29.212 --> 00:03:40.035
+For example, here, you can find that there are 4 models using the “flatten, dense, relu, dense” pattern.
+
+00:03:40.035 --> 00:03:46.641
+In the hyperparameter charts, you can place your mouse on each circle to see detailed information.
+
+00:03:46.641 --> 00:03:52.990
+A larger circle means that more models use this value.
+
+00:03:52.990 --> 00:03:59.154
+And this circle means that 4 projects use the “batch_size=5”.
+
+00:03:59.154 --> 00:04:04.748
+Besides, when you click the circle, the corresponding model structures will be highlighted.
+
+00:04:04.748 --> 00:04:13.276
+When you want to focus on the parameters of a specific layer, you can click the node on the Sankey diagram.
+
+00:04:13.276 --> 00:04:19.669
+Okay, let's move on to the last part of the interface, the Project Info panel.
+
+00:04:19.669 --> 00:04:23.568
+This panel shows the list of the GitHub projects in our dataset.
+
+00:04:23.568 --> 00:04:34.685
+The large rectangles represent project information, and the small rectangles represent models in this project.
+
+00:04:34.685 --> 00:04:42.635
+When you click the “project” rectangle, the model it contains will be highlighted on the Sankey diagram.
+
+00:04:42.635 --> 00:04:50.900
+You can also click the “Sort by” button to sort these items with stars and forks.
+
+00:04:50.900 --> 00:04:56.823
+Once you have determined the project you want to reuse, you can click the project name.
+
+00:04:56.823 --> 00:05:00.367
+It will jump directly to the GitHub repo.
