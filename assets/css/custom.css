@@ -3,6 +3,10 @@ body {
   text-decoration-skip: ink;
 }
 
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
 em {
   background-color:rgb(255, 147, 141);
 }
