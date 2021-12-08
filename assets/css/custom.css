@@ -7,8 +7,11 @@ li:not(:last-child) {
     margin-bottom: 5px;
 }
 
-em {
+em-best {
   background-color:rgb(255, 147, 141);
+}
+em-honorable {
+  background-color:rgb(255, 197, 194); #255, 197, 194
 }
 
 a {
