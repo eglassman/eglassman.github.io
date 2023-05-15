@@ -3,6 +3,17 @@ body {
   text-decoration-skip: ink;
 }
 
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+em-best {
+  background-color:rgb(255, 147, 141);
+}
+em-honorable {
+  background-color:rgb(255, 197, 194); #255, 197, 194
+}
+
 a {
   color: rgb(220, 91, 93);
   text-decoration: none;
@@ -370,8 +381,8 @@ pre.bibtex {
   white-space: pre-wrap;
 }
 
-.project .teaser-img { 
-  position: relative; 
+.project .teaser-img {
+  position: relative;
 }
 
 .project .play-button {
@@ -467,7 +478,7 @@ pre.bibtex {
   width: 123px;
   opacity: 0.7;
 }
-.person img:hover { 
+.person img:hover {
   opacity: 0.9;
 }
 
