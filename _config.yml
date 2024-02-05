@@ -1,6 +1,8 @@
 # global settings
 title: "The Variation Lab @ Harvard SEAS"
-description: 'Generating and revealing structured variation in data and system behavior to help humans learn and communicate data-driven conceptual models'
+description: 'augmenting human intelligence with <s>computation</s> variation'
+#'Developing Interfaces for Sensemaking, Programming, and Human-Computer/Robot Communication'
+#'Generating and revealing structured variation in data and system behavior to help humans learn and communicate data-driven conceptual models'
 #'interacting with variation for concept learning' #"augmenting human intelligence with computation" #description: "Making communicating with computers more accessible: easier, faster, and safer"
 #url: "pl-hci-seminar.seas.harvard.edu" # the base hostname & protocol for your site, e.g. http://example.com
 
