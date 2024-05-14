@@ -13,6 +13,12 @@ em-best {
 em-honorable {
   background-color:rgb(255, 197, 194); #255, 197, 194
 }
+em-open {
+  background-color:rgb(182, 214, 252); #182, 214, 252
+}
+em-demo {
+  background-color:rgb(184, 220, 186); #184, 220, 186
+}
 
 a {
   color: rgb(220, 91, 93);
